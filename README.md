@@ -90,6 +90,4 @@ Open `http://localhost:5173`. The seeded local database contains fictional sampl
 - [Architecture notes](docs/ARCHITECTURE.md)
 - [Database schema](docs/DATABASE_SCHEMA.md)
 
-## Project status
 
-QueueLess is an evolving clinic queue application. Its sample data is fictional. Review privacy, security, and applicable requirements before using sensitive patient information.
