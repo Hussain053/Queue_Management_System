@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch('RAILS_MAX_THREADS', 5) %>
+  host: <%= ENV['PGHOST'] %>
+  port: <%= ENV.fetch('PGPORT', 5432) %>
+  username: <%= ENV.fetch('PGUSER', ENV.fetch('USER', 'postgres')) %>
+  password: <%= ENV['PGPASSWORD'] %>
+development:
+  <<: *default
+  database: queueless_development
+test:
+  <<: *default
+  database: queueless_test
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

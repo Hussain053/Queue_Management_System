@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.bundle/
+vendor/bundle/
+coverage/
+*.tsbuildinfo
+log/
+tmp/
+*.sqlite3
